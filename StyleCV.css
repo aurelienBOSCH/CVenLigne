@@ -1,19 +1,52 @@
-main{
-    font-family:Arial Black, Arial Bold, Gadget, sans-serif;
+body{
+    display:flex;
+     /*réparti les blocks filles en horizontal*/
+    height: 100%;
+    background-color: rgb(245, 235, 192) !important;
+
 }
 header{
-    background:linear-gradient(rgb(23, 23, 23),rgb(82, 82, 82)) !important;
-    position: static;
+    background:linear-gradient(rgb(245, 195, 88),rgb(254, 47, 0));
+    width: 15%;
     height: 100%;
-    font-family:Arial Black, Arial Bold, Gadget, sans-serif;
-    display: flex;
+    
+    position: fixed; /*par rapport a sa position*/ /*!=absolute par rapport au body*/
+}
+#photoprofil{
+    margin-top: 10%;
+    position: relative;
+    left: 33%;
+    border-radius: 50%;
+
+}
+#texteprofil{
+    margin-top: 10%;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(56, 55, 58);
 }
 
-.nav_flex-column> a{
-    color: rgb(12, 135, 235) !important;
+main{
+    font-family:Arial Black, Arial Bold, Gadget, sans-serif;
+    
+    margin-left: 18%;
+    margin-right: 10%;
+}
+.nav-link{
+    color: rgb(255, 248, 219) !important;
     font-size: 15px;
     height: 100%;
+    margin-left: 5%;
+    font-weight: bold;
 }
+#linkedin{
+    position: fixed;
+    bottom: 3%;
+   left: 5%;
+}
+/*
 #background{
     width: 100%;
     position: absolute;
@@ -23,11 +56,28 @@ header{
     margin-left: 38%;
     top: 800px;
     color: red; 
-}
-header, .contenu{
-    display: inline;
-}
-
-/*.contenu{
-    display: inline;
 }*/
+
+#liste1{
+    left: 0;
+}
+#nopuce{
+    list-style-type: none;
+}
+.desc-exp{
+    font-style: italic;
+    
+}
+.date-col{
+    width: 30%;
+}
+#dateitalic{
+    font-style: italic;
+}
+.section-titre >h2{
+    color: rgb(232, 228, 226);
+}
+.section-titre{
+    background : linear-gradient(rgb(235, 219, 184),rgb(254, 140, 0));
+    
+}

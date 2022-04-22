@@ -15,19 +15,40 @@
 
     <header>
         <div class="profil">
-            <img id="photoprofil" src="PhotoAbout.jpg" alt="photo profil" width="5%">
+            <img id="photoprofil" src="PhotoAbout.jpg" alt="photo profil" width="30%">
             <h1 id="texteprofil">Aurélien Bosch</h1>
-            <a href="https://www.linkedin.com/in/aurelien-bosch/">Linkedin</a>
+            <a id="linkedin" href="https://www.linkedin.com/in/aurelien-bosch/">Linkedin</a>
 
         </div>
-        <nav class="nav_flex-column">
+        <!-- <nav class="nav flex-column">
             <a class="nav-link active" aria-current="page" href="#home">Accueil</a>
             <a class="nav-link" href="#about">À propos de moi</a>
             <a class="nav-link" href="#skills">Mes compétences</a>
             <a class="nav-link" href="#formation">Mes formations</a>
             <a class="nav-link" href="#exp">Mes expériences professionnelles</a>
             <a class="nav-link" href="#hobbies">Mes passions</a>
-        </nav>
+        </nav> passe en inline une fois le height imposé par le CSS-->
+
+        <ul class="nav flex-column">
+            <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Accueil</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="#about">À propos de moi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Mes compétences</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#formation">Mes formations</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#exp">Mes expériences professionnelles</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#hobbies">Mes passions</a>
+            </li>
+        </ul>
     </header>
     <main>
 
@@ -43,16 +64,13 @@
         <section id="about">
             <div class="section-titre">
 
-
                 <h2>À propos de moi</h2>
-                <p>
-                    Developpeur junior fraîchement reconverti depuis le milieu la science des Matériaux.
-                </p>
+
             </div>
             <table class="section-table">
                 <tr>
-                    <td rowspan="3">
-                        <img id="photoabout" src="PhotoAbout.jpg" alt="Photo about" width="100%" >
+                    <td rowspan="3" width="40%">
+                        <img id="photoabout" src="PhotoAbout.jpg" alt="Photo about" width="60%">
                     </td>
                     <td>
                         <h3>Ingénieur d’études et de développement JAVA/JEE</h3>
@@ -60,79 +78,231 @@
                 </tr>
                 <tr>
                     <td>
-                        <ul>
+                        <ul id="liste1">
                             <li>
-                                <strong>Age:</strong>  26 ans
+                                <strong>Age:</strong> 26 ans
                             </li>
                             <li>
-                                <strong>Niveau d'étude:</strong>  Master 2
+                                <strong>Niveau d'étude:</strong> Master 2
                             </li>
                             <li>
-                                <strong>Email:</strong>  aurel_bosch@msn.com
+                                <strong>Email:</strong> aurel_bosch@msn.com
                             </li>
                             <li>
-                                <strong>Téléphone :</strong>  06 46 60 82 44
+                                <strong>Téléphone :</strong> 06 46 60 82 44
                             </li>
                             <li>
-                                <strong>Ville:</strong>  Guyancourt, YVELINES
+                                <strong>Ville:</strong> Guyancourt, YVELINES
                             </li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p>Diplomé d'un Master 2 Couches Minces et Mangaement Industriel à l'Université de Saclay j'ai décidé de me redirigé dans la voie de l'informatique.
-                            Ayant toujours été intrigué par ce milieu en plein essort et en perpétuel évolution j'ai voulu acquérir de nouvelles compétances afin de pouvoir
-                            réponder à mon appétance en terme d'apprentissages et de nouveaux défis. Domicilié dans les Yvelines je suis principalement mobile sur Paris et 
+                        <p>Diplomé d'un Master 2 Couches Minces et Management Industriel à l'Université Paris-Saclay
+                            j'ai décidé de me rediriger dans la voie de l'informatique.
+                            Ayant toujours été intrigué par ce milieu en plein essort et en perpétuel évolution j'ai
+                            voulu acquérir de nouvelles compétances afin de pouvoir
+                            répondre à mon appétance en terme d'apprentissages et de nouveaux défis. Domicilié dans les
+                            Yvelines je suis principalement mobile sur Paris et
                             le Sud-Ouest de l'Ile-de-France.
                         </p>
+
                     </td>
                 </tr>
             </table>
         </section>
         <section id="skills">
-            <article>
+            <div class="section-titre">
 
-            </article>
-            <article>
+                <h2>Domaines de compétences</h2>
 
-            </article>
-            <article>
-
-            </article>
+            </div>
+            <table class="section-table">
+                <tr>
+                    <td>
+                        <h4>Informatique</h4>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <strong>Langages de programmation: C, G</strong>
+                            </li>
+                            <li>
+                                <strong>Bureautique: Word, Excel, Powerpoint</strong>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Autres compétences</h4>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <strong>Logiciels CAO: </strong>SolidWorks, CATIA
+                            </li>
+                            <li>
+                                <strong>Logiciel Simulation: </strong>ANSYS, COMSOL
+                            </li>
+                            <li>
+                                <strong>Logiciel calcul technique: </strong>MATLAB
+                            </li>
+                            <li>
+                                <strong>Logiciel programmation graphique: </strong>LabVIEW
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Langues</h4>
+                    </td>
+                    <td><strong>Anglais</strong> intermédiaire supérieur B2 - TOEIC 835</td>
+                </tr>
+            </table>
         </section>
         <section id="formation">
-            <article>
+            <div class="section-titre">
 
-            </article>
-            <article>
+                <h2>Formation</h2>
 
-            </article>
-            <article>
+            </div>
+            <table class="section-table">
+                <tr class="ligne-exp">
+                    <td class="date-col">
 
-            </article>
+                    </td>
+                    <td class="liste-exp">
+
+                    </td>
+                </tr>
+            </table>
         </section>
-        <section id="exp">
-            <article>
+        <section id="mesExp">
+            <div class="section-titre">
 
-            </article>
-            <article>
+                <h2>Expériences professionnelles</h2>
 
-            </article>
-            <article>
+            </div>
+            <table class="section-table">
+                <div class="experience">
+                    <tr class="ligne-exp">
+                        <td class="date-col">
+                            <strong>Mars - Juin 2022</strong> <br> <span id="dateitalic">(57jours)</span>
 
-            </article>
+                        </td>
+                        <td class="liste-exp">
+                            <h5><strong>INTI FORMATION</strong></h5>
+                            <p class="desc-exp">Projet/Formation d'ingénieur d'études <strong>JAVA/JEE</strong></p>
+                            <ul>
+                                <li>Enjeux et Etat de l’art</li>
+                                <li>UML : Les Concepts Objets</li>
+                                <li>JAVA : Les fondamentaux/li>
+                                <li>Les Design Patterns</li>
+                                <li>Le développement Frontend :
+                                    <ul>
+                                        <li>Html</li>
+                                        <li>CSS</li>
+                                        <li>Bootstrap</li>
+                                        <li>Javascript</li>
+                                        <li>Jquery</li>
+                                        <li>Angular JS</li>
+                                    </ul>
+                                </li>
+                                <li>LE Framework JEE et son ecosystem:
+                                    <ul>
+                                        <li>JSP/Servlet</li>
+                                        <li>JSF</li>
+                                        <li>SPRING
+                                            <ul>
+                                                <li>Spring BATCH</li>
+                                                <li>Spring SECURITY</li>
+                                                <li>Spring MVC</li>
+                                                <li>Spring DATA</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Langage XML
+                                    <ul>
+                                        <li id="nopuce">
+                                            <ul>
+                                                <li>JAXB</li>
+                                                <li>XSD</li>
+                                                <li>XSL</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Les services et SOA:
+                                    <ul>
+                                        <li>JAX-RS</li>
+                                        <li>JAX-WS</li>
+                                        <li>Architecture REST</li>
+                                    </ul>
+                                </li>
+                                <li>Les ORM et SGBD
+                                    <ul>
+                                        <li>MySQL</li>
+                                        <li>Oracle</li>
+                                        <li>PL/SQL</li>
+                                        <li>JPA</li>
+                                        <li>Hibernate</li>
+                                    </ul>
+                                </li>
+                                <li>Génie Logiciel: La Qualité Logiciel</li>
+                                <li>Méthodes Agiles; XP, SCRUM</li>
+                                <li>PROJET : Développement d'application Java JEE</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </div>
+                <div class="experience">
+                    <tr class="ligne-exp">
+                        <td class="date-col">
+                            <strong>Février - Avril 2021</strong>
+
+                        </td>
+                        <td class="liste-exp">
+                            <h5><strong>VENDEUR</strong></h5>
+                            <h6><strong>Grand Frais</strong> - RAMBOUILLET</h6>
+                            <p class="desc-exp">Vendeur Spécialisé en Fruits & Légumes/Poissons</p>
+                            <ul>
+                                <li>Approvisionnement et mise en place des rayons</li>
+                                <li>Conseils à la clientèle sur les différents produits</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </div>
+                <div class="experience">
+                    <tr class="ligne-exp">
+                        <td class="date-col">
+                            <strong>Juillet - Décembre 2020</strong>
+
+                        </td>
+                        <td class="liste-exp">
+                            <h5><strong>CONCEPTEUR MONTAGE MANIPULATION SOUS VIDE</strong></h5>
+                            <h6><strong>ISMO (associé au CNRS)</strong> - ORSAY</h6>
+                            <p class="desc-exp">Stage : Conception d'un montage GIFAD-HiPIMS</p>
+                            <ul>
+                                <li>Association d’une méthode de dépôt avec une toute nouvelle technique de suivi en temps réel</li>
+                                <li>Réalisation d’un premier montage fonctionnel avec des résultats expérimentaux très prometteurs</li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                   <!-- <tr class="environnement">Environnement technique : Word, Excel, Powerpoint</tr> -->
+                </div>
+            </table>
         </section>
         <section id="hobbies">
-            <article>
+            <div class="section-titre">
 
-            </article>
-            <article>
+                <h2>Centres d'intéret</h2>
 
-            </article>
-            <article>
-
-            </article>
+            </div>
         </section>
 
 

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-<!----balise ouvrante -->
 
 <head>
     <title>CV Aurélien Bosch</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="StyleCV.css" />
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
-    <!--priorité dans celui qui est en bas-->
+    <!--priorité pour celui qui est en bas-->
 </head>
 
 <body>
@@ -20,6 +19,7 @@
             <a id="linkedin" href="https://www.linkedin.com/in/aurelien-bosch/">Linkedin</a>
 
         </div>
+        <br>
         <!-- <nav class="nav flex-column">
             <a class="nav-link active" aria-current="page" href="#home">Accueil</a>
             <a class="nav-link" href="#about">À propos de moi</a>
@@ -30,9 +30,7 @@
         </nav> passe en inline une fois le height imposé par le CSS-->
 
         <ul class="nav flex-column">
-            <!-- <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Accueil</a>
-            </li> -->
+
             <li class="nav-item">
                 <a class="nav-link" href="#about">À propos de moi</a>
             </li>
@@ -43,7 +41,7 @@
                 <a class="nav-link" href="#formation">Mes formations</a>
             </li>
             <li>
-                <a class="nav-link" href="#exp">Mes expériences professionnelles</a>
+                <a class="nav-link" href="#mesExp">Mes expériences professionnelles</a>
             </li>
             <li>
                 <a class="nav-link" href="#hobbies">Mes passions</a>
@@ -52,75 +50,64 @@
     </header>
     <main>
 
-        <!--
-            <section id="home">
-                <img id="background" src="background.jpg" alt="Mon background">
-                <h1 id ="textbackground">
-                    Architecte logiciel Java / JEE
-                </h1>
 
-              
-            </section>-->
+        <br><br>
         <section id="about">
             <div class="section-titre">
 
                 <h2>À propos de moi</h2>
 
             </div>
-            <table class="section-table">
-                <tr>
-                    <td rowspan="3" width="40%">
-                        <img id="photoabout" src="PhotoAbout.jpg" alt="Photo about" width="60%">
-                    </td>
-                    <td>
-                        <h3>Ingénieur d’études et de développement JAVA/JEE</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul id="liste1">
-                            <li>
-                                <strong>Age:</strong> 26 ans
-                            </li>
-                            <li>
-                                <strong>Niveau d'étude:</strong> Master 2
-                            </li>
-                            <li>
-                                <strong>Email:</strong> aurel_bosch@msn.com
-                            </li>
-                            <li>
-                                <strong>Téléphone :</strong> 06 46 60 82 44
-                            </li>
-                            <li>
-                                <strong>Ville:</strong> Guyancourt, YVELINES
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Diplomé d'un Master 2 Couches Minces et Management Industriel à l'Université Paris-Saclay
-                            j'ai décidé de me rediriger dans la voie de l'informatique.
-                            Ayant toujours été intrigué par ce milieu en plein essort et en perpétuel évolution j'ai
-                            voulu acquérir de nouvelles compétances afin de pouvoir
-                            répondre à mon appétance en terme d'apprentissages et de nouveaux défis. Domicilié dans les
-                            Yvelines je suis principalement mobile sur Paris et
-                            le Sud-Ouest de l'Ile-de-France.
-                        </p>
+            <br>
+            <div class="section-content">
+                <div class="photoabout">
+                    <img id="photoabout" src="PhotoAbout.jpg" alt="Photo about" width="80%">
+                </div>
+                <div class="blockabout">
+                    <h3>Ingénieur d’études et de développement JAVA/JEE</h3>
+                    <br>
+                    <ul id="liste1">
+                        <li>
+                            <strong>Age:</strong> 26 ans
+                        </li>
+                        <li>
+                            <strong>Niveau d'étude:</strong> Master 2
+                        </li>
+                        <li>
+                            <strong>Email:</strong> aurel_bosch@msn.com
+                        </li>
+                        <li>
+                            <strong>Téléphone :</strong> 06 46 60 82 44
+                        </li>
+                        <li>
+                            <strong>Ville:</strong> Guyancourt, YVELINES
+                        </li>
+                    </ul>
+                    <br>
+                    <p>Diplomé d'un Master 2 Couches Minces et Management Industriel à l'Université Paris-Saclay
+                        j'ai décidé de me rediriger dans la voie de l'informatique.
+                        Ayant toujours été intrigué par ce milieu en plein essort et en perpétuel évolution j'ai
+                        voulu acquérir de nouvelles compétances afin de pouvoir
+                        répondre à mon appétance en terme d'apprentissages et de nouveaux défis. Domicilié dans les
+                        Yvelines je suis principalement mobile sur Paris et
+                        le Sud-Ouest de l'Ile-de-France.
+                    </p>
 
-                    </td>
-                </tr>
-            </table>
+                </div>
+            </div>
+
         </section>
+        <br>
         <section id="skills">
             <div class="section-titre">
 
                 <h2>Domaines de compétences</h2>
 
             </div>
+            <br><br>
             <table class="section-table">
                 <tr>
-                    <td>
+                    <td class="skilltitre">
                         <h4>Informatique</h4>
                     </td>
                     <td>
@@ -135,7 +122,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="skilltitre">
                         <h4>Autres compétences</h4>
                     </td>
                     <td>
@@ -156,42 +143,113 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="skilltitre">
                         <h4>Langues</h4>
                     </td>
                     <td><strong>Anglais</strong> intermédiaire supérieur B2 - TOEIC 835</td>
                 </tr>
             </table>
         </section>
+        <br><br>
         <section id="formation">
             <div class="section-titre">
 
                 <h2>Formation</h2>
 
             </div>
+            <br>
             <table class="section-table">
-                <tr class="ligne-exp">
+                <tr class="ligne-form">
                     <td class="date-col">
-
+                        <strong>2022</strong>
                     </td>
-                    <td class="liste-exp">
-
+                    <td class="liste-form">
+                        <h5>INTI FORMATION (ADAMING)</h5>Formation Java JEE <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li id="nopuce"><br></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="ligne-form">
+                    <td class="date-col">
+                        <strong>2019 - 2020</strong>
+                    </td>
+                    <td class="liste-form">
+                        <h5>Université Paris-Saclay – Plateau de Saclay</h5>Master 2 Couches Minces et Management
+                        Industriel, avec mention
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li id="nopuce"><br></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="ligne-form">
+                    <td class="date-col">
+                        <strong>2017 - 2019</strong>
+                    </td>
+                    <td class="liste-form">
+                        <h5>UFR SITEC – Ville-d’Avray</h5>Master Génie Industriel - Energétique et Matériaux pour
+                        l’ingénieur, avec mention
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li id="nopuce"><br></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="ligne-form">
+                    <td class="date-col">
+                        <strong>2012 - 2016</strong>
+                    </td>
+                    <td class="liste-form">
+                        <h5>UFR des Sciences – Versailles</h5>Licence de Physique
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li id="nopuce"><br></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="ligne-form">
+                    <td class="date-col">
+                        <strong>2009 - 2012</strong>
+                    </td>
+                    <td class="liste-form">
+                        <h5>Lycée de Villaroy – Guyancourt</h5>Baccalauréat Scientifique, mention bien
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li id="nopuce"><br></li>
+                        </ul>
                     </td>
                 </tr>
             </table>
         </section>
+        <br>
         <section id="mesExp">
             <div class="section-titre">
 
                 <h2>Expériences professionnelles</h2>
 
             </div>
+            <br><br>
             <table class="section-table">
                 <div class="experience">
                     <tr class="ligne-exp">
                         <td class="date-col">
                             <strong>Mars - Juin 2022</strong> <br> <span id="dateitalic">(57jours)</span>
-
                         </td>
                         <td class="liste-exp">
                             <h5><strong>INTI FORMATION</strong></h5>
@@ -199,7 +257,7 @@
                             <ul>
                                 <li>Enjeux et Etat de l’art</li>
                                 <li>UML : Les Concepts Objets</li>
-                                <li>JAVA : Les fondamentaux/li>
+                                <li>JAVA : Les fondamentaux</li>
                                 <li>Les Design Patterns</li>
                                 <li>Le développement Frontend :
                                     <ul>
@@ -253,8 +311,17 @@
                                     </ul>
                                 </li>
                                 <li>Génie Logiciel: La Qualité Logiciel</li>
-                                <li>Méthodes Agiles; XP, SCRUM</li>
+                                <li>Méthodes Agiles: XP, SCRUM</li>
                                 <li>PROJET : Développement d'application Java JEE</li>
+                                <li id="nopuce"><br></li>
+
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li id="nopuce"><br></li>
                             </ul>
                         </td>
                     </tr>
@@ -267,11 +334,19 @@
                         </td>
                         <td class="liste-exp">
                             <h5><strong>VENDEUR</strong></h5>
-                            <h6><strong>Grand Frais</strong> - RAMBOUILLET</h6>
+                            <h6><strong>Grand Frais</strong> - Rambouillet</h6>
                             <p class="desc-exp">Vendeur Spécialisé en Fruits & Légumes/Poissons</p>
                             <ul>
                                 <li>Approvisionnement et mise en place des rayons</li>
                                 <li>Conseils à la clientèle sur les différents produits</li>
+                                <li id="nopuce"><br></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li id="nopuce"><br></li>
                             </ul>
                         </td>
                     </tr>
@@ -284,25 +359,189 @@
                         </td>
                         <td class="liste-exp">
                             <h5><strong>CONCEPTEUR MONTAGE MANIPULATION SOUS VIDE</strong></h5>
-                            <h6><strong>ISMO (associé au CNRS)</strong> - ORSAY</h6>
+                            <h6><strong>ISMO (associé au CNRS)</strong> - Orsay</h6>
                             <p class="desc-exp">Stage : Conception d'un montage GIFAD-HiPIMS</p>
                             <ul>
-                                <li>Association d’une méthode de dépôt avec une toute nouvelle technique de suivi en temps réel</li>
-                                <li>Réalisation d’un premier montage fonctionnel avec des résultats expérimentaux très prometteurs</li>
+                                <li>Association d’une méthode de dépôt avec une toute nouvelle technique de suivi en
+                                    temps réel</li>
+                                <li>Réalisation d’un premier montage fonctionnel avec des résultats expérimentaux très
+                                    prometteurs</li>
+                                <li id="nopuce"><br></li>
                             </ul>
                         </td>
-                        
+
                     </tr>
-                   <!-- <tr class="environnement">Environnement technique : Word, Excel, Powerpoint</tr> -->
+                    <tr>
+                        <td class="environnement" colspan="2">Environnement technique : Word, Excel, Powerpoint
+                            <ul>
+                                <li id="nopuce"><br></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li id="nopuce"><br></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </div>
+                <div class="experience">
+                    <tr class="ligne-exp">
+                        <td class="date-col">
+                            <strong>Avril - Septembre 2018</strong>
+
+                        </td>
+                        <td class="liste-exp">
+                            <h5><strong>CONCEPTEUR MONTAGE BANCS OPTIQUES</strong></h5>
+                            <h6><strong>LEME (en collaboration avec le CEA)</strong> - Ville-d'Avray</h6>
+                            <p class="desc-exp">Stage : Diagnostics optiques sur la réaction Sodium-Eau</p>
+                            <ul>
+                                <li>Introduction à l'utilisation de matériel optique de pointe</li>
+                                <li>Appropriation de techniques de mesures et de visualisation</li>
+                                <li>Elaboration de montages optiques complexes</li>
+                                <li id="nopuce"><br></li>
+                            </ul>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="environnement" colspan="2">Environnement technique : Word, Excel, Powerpoint
+                            <ul>
+                                <li id="nopuce"><br></li>
+                            </ul>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li id="nopuce"><br></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </div>
+                <div class="experience">
+                    <tr class="ligne-exp">
+                        <td class="date-col">
+                            <strong>Février - Décembre 2017</strong>
+
+                        </td>
+                        <td class="liste-exp">
+                            <h5><strong>SERVEUR</strong></h5>
+                            <h6><strong>Restaurant AMORES</strong> - Paris XI</h6>
+                            <p class="desc-exp">Service du soir</p>
+                            <ul>
+                                <li>Facilité dans le contact avec le client et capacité à conseiller</li>
+                                <li>Assurer la totalité d’un service en salle depuis l’arrivée du client jusqu’à son
+                                    départ</li>
+                                <li>Adaptation du déroulement du service en fonction des contraintes simultanées (salle
+                                    et cuisine)</li>
+                                <li id="nopuce"><br></li>
+                            </ul>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li id="nopuce"><br></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </div>
+                <div class="experience">
+                    <tr class="ligne-exp">
+                        <td class="date-col">
+                            <strong>Avril - Août 2016</strong>
+
+                        </td>
+                        <td class="liste-exp">
+                            <h5><strong>CHERCHEUR NANOMATERIAUX MAGNETIQUES</strong></h5>
+                            <h6><strong>GeMAC (associé au CNRS)</strong> - Versailles</h6>
+                            <p class="desc-exp">Stage : Etude des propriétés magnétiques de nanofils de nickel en
+                                matrice</p>
+                            <ul>
+                                <li>Introduction à la recherche bibliographique</li>
+                                <li>Mesure de propriétés magnétiques sous atmosphère contrôlée</li>
+                                <li>Création d'un protocole de traitement et d'analyse des données</li>
+                                <li id="nopuce"><br></li>
+                            </ul>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="environnement" colspan="2">Environnement technique : Word, Excel, Powerpoint,
+                            Logiciel de traitement de mesure de réponse magnétique
+                            <ul>
+                                <li id="nopuce"><br></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li id="nopuce"><br></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </div>
+                <div class="experience">
+                    <tr class="ligne-exp">
+                        <td class="date-col">
+                            <strong>Juin 2014 - Août 2016</strong>
+
+                        </td>
+                        <td class="liste-exp">
+                            <h5><strong>CAISSIER</strong></h5>
+                            <h6><strong>Hypermarché CARREFOUR</strong> - Montigny-le-Bretonneux</h6>
+                            <p class="desc-exp">Hôte de caisse en contrat étudiant </p>
+                            <ul>
+                                <li>Acquisition du sens des responsabilités</li>
+                                <li>Capacité à gérer des situations délicates</li>
+                                <li>Développement social et relationnel </li>
+                                <li id="nopuce"><br></li>
+                            </ul>
+                        </td>
+                    </tr>
                 </div>
             </table>
         </section>
+        <br>
         <section id="hobbies">
             <div class="section-titre">
 
                 <h2>Centres d'intéret</h2>
-
             </div>
+            <br><br>
+            <div class="section-content">
+                <div class="sport">
+                    <fieldset>
+                        <legend>
+                            <h5>Sport</h5>
+                        </legend>
+                        <ul>
+                            <li>Football</li>
+                            <li>Boxe</li>
+                            <li>Kungfu</li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="chill">
+                    <fieldset>
+                        <legend>
+                            <h5>Détente</h5>
+                        </legend>
+                        <ul>
+                            <li>Documentation scientifique</li>
+                            <li>Musique</li>
+                            <li>Films</li>
+                            <li>Jeux Vidéos</li>
+                        </ul>
+                    </fieldset>
+
+                </div>
+
         </section>
 
 
